@@ -1,0 +1,11 @@
+<h1>
+  {{title}}
+</h1>
+<div *ngIf="title == 'works!'">Directive works!</div>
+<input (input)="title = $event.target.value"/>
+
+<div *ngFor="let item of accounts">
+	<p>{{item.Name}}</p>
+</div>
+
+<div>blabla</div>
